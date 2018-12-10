@@ -108,15 +108,15 @@ void search_list(struct product beer_list[]) {
 		if (varunummer == beer_list[i].varunummer) {
 			printf("\nYour searched product is displayed below: \n");
 			printf("\n%d\n%s\n%f\n%f\n%s\n%s\n%s\n%s\n%s\n%f\n",  beer_list[i].varunummer,
-																	  beer_list[i].namn,
-																	  beer_list[i].pris,
-																	  beer_list[i].volym,
-																	  beer_list[i].typ,
-																	  beer_list[i].stil,
-																	  beer_list[i].forpackning,
-																	  beer_list[i].land,
-																	  beer_list[i].producent,
-																	  beer_list[i].alkoholhalt);
+									      beer_list[i].namn,
+									      beer_list[i].pris,
+									      beer_list[i].volym,
+								              beer_list[i].typ,
+								              beer_list[i].stil,
+									      beer_list[i].forpackning,
+									      beer_list[i].land,
+									      beer_list[i].producent,
+									      beer_list[i].alkoholhalt);
 			TRUE = 0;
 			printf("\nPress 1 to search for a new product or 0 to go back to the main menu\n");
 			scanf("%d", &EXIT);
