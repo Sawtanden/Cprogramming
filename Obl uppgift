@@ -9,10 +9,9 @@ int main() {
 
 void menu() {
 	
-	get_beer();
-	int option, retry = 0;
+    int option, retry = 0;
 
-	printf("1. Lista Innehall\n\n");
+    printf("1. Lista Innehall\n\n");
     printf("\n2. Lagg till ny vara\n\n");
     printf("\n3. Sok bland varor\n\n");
     printf("\n4. Spara vara till fil\n\n");
@@ -105,10 +104,10 @@ void search_list(struct product beer_list[]) {
 	
     printf("Enter the 5 digit serialnumber of the product you're searching for: ");
     scanf("%d", &varunummer);
-		while (TRUE) {
-			if (varunummer == beer_list[i].varunummer) {
-				printf("\nYour searched product is displayed below: \n");
-				printf("\n%d\n%s\n%f\n%f\n%s\n%s\n%s\n%s\n%s\n%f\n",  beer_list[i].varunummer,
+	while (TRUE) {
+		if (varunummer == beer_list[i].varunummer) {
+			printf("\nYour searched product is displayed below: \n");
+			printf("\n%d\n%s\n%f\n%f\n%s\n%s\n%s\n%s\n%s\n%f\n",  beer_list[i].varunummer,
 																	  beer_list[i].namn,
 																	  beer_list[i].pris,
 																	  beer_list[i].volym,
@@ -118,28 +117,28 @@ void search_list(struct product beer_list[]) {
 																	  beer_list[i].land,
 																	  beer_list[i].producent,
 																	  beer_list[i].alkoholhalt);
-				TRUE = 0;
-				printf("\nPress 1 to search for a new product or 0 to go back to the main menu\n");
-				scanf("%d", &EXIT);
-					if (EXIT == 0) {
-						menu();
-					} else {
-						search_list(beer_list);
-					}
+			TRUE = 0;
+			printf("\nPress 1 to search for a new product or 0 to go back to the main menu\n");
+			scanf("%d", &EXIT);
+				if (EXIT == 0) {
+					menu();
+				} else {
+					search_list(beer_list);
+				}
 					
-			} else {
-				i++;
-					if (i > 100) {
-						printf("\nYour product isn't in our assortment, press 1 to try again or press 0 to return to menu\n");
-						scanf("%d", &EXIT);
-					if (EXIT == 0) {
-						menu();
-					} else {
-						search_list(beer_list);
-					}
+		} else {
+	 		i++;
+				if (i > 100) {
+					printf("\nYour product isn't in our assortment, press 1 to try again or press 0 to return to menu\n");
+					scanf("%d", &EXIT);
+				if (EXIT == 0) {
+					menu();
+				} else {
+					search_list(beer_list);
 				}
 			}
-		} 
+		}
+	} 
 }
 
 void add_product(struct product beer_list[]) {
