@@ -1,0 +1,24 @@
+struct product {
+    int varunummer;
+    char namn[100];
+    float pris;
+    float volym;
+    char typ[100];
+    char stil[100];
+    char forpackning[50];
+    char land[50];
+    char producent[100];
+    float alkoholhalt;
+};
+
+void menu();
+void get_beer();
+void search_list(struct product []);
+int add_product(struct product []);
+void save_file(struct product []);
+void sort_content_serialnumber(struct product []);
+void sort_content_name(struct product []);
+void check_string_float(struct product [], int j);
+void check_integer(struct product []);
+
+struct product beer_list[100];
