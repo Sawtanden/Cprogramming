@@ -161,6 +161,7 @@ void sort_content_serialnumber(struct product beer_list[], int input) {
 
 	struct product temp;
 	int n;
+	save_file(beer_list);
 		
 		for (n = 0; n < 100; n++) {
 			if (beer_list[n].varunummer == '\0') {
@@ -203,6 +204,7 @@ void sort_content_name(struct product beer_list[], int input) {
 
 	struct product temp;
 	int n;
+	save_file(beer_list);
 		
 		for (n = 0; n < 100; n++) {
 			if (beer_list[n].varunummer == '\0') {
