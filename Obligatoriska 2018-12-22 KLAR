@@ -181,16 +181,26 @@ void sort_content_serialnumber(struct product beer_list[], int input) {
 	printf("    Number:             Name:                       	       Price:   Volume:             Type:  			    Style:    	          Packaging:   Country:        	    	   Producer:   	     Alcohol percentage:\n");
 	for(int antal_varor = 0; antal_varor < n; antal_varor++) {	
 		printf("\n%-4d %-8d %-48s %-8.2f %-8.2f %-30s %-27s %-10s %-23s %-29s %.2f", antal_varor+1,
-																					 beer_list[antal_varor].varunummer,       
-																					 beer_list[antal_varor].namn,
-																					 beer_list[antal_varor].pris,
-																					 beer_list[antal_varor].volym,
-																					 beer_list[antal_varor].typ,
-																				 	 beer_list[antal_varor].stil,
-																				 	 beer_list[antal_varor].forpackning,
-																					 beer_list[antal_varor].land,
-																				 	 beer_list[antal_varor].producent,
-																					 beer_list[antal_varor].alkoholhalt);
+		 beer_list[antal_varor].varunummer,       
+		 beer_list[antal_varor].namn,
+		 beer_list[antal_varor].pris,
+		 beer_list[antal_varor].volym,
+		 beer_list[antal_varor].typ,
+		 beer_list[antal_varor].stil,
+		 beer_list[antal_varor].forpackning,
+		 beer_list[antal_varor].land,
+		 beer_list[antal_varor].producent,
+		 beer_list[antal_varor].alkoholhalt);
+		 beer_list[antal_varor].varunummer,       
+		 beer_list[antal_varor].namn,
+		 beer_list[antal_varor].pris,
+		 beer_list[antal_varor].volym,
+		 beer_list[antal_varor].typ,
+		 beer_list[antal_varor].stil,
+		 beer_list[antal_varor].forpackning,
+		 beer_list[antal_varor].land,
+		 beer_list[antal_varor].producent,
+		 beer_list[antal_varor].alkoholhalt);
 		if (antal_varor == n-1) {
 			printf("\n\n");
 		}
@@ -223,16 +233,26 @@ void sort_content_name(struct product beer_list[], int input) {
 	printf("    Number:             Name:                       	       Price:   Volume:             Type:  			    Style:    	          Packaging:   Country:        	    	  Producer:   	     Alcohol percentage:\n");
 	for(int antal_varor = 0; antal_varor < n; antal_varor++) {	
 		printf("\n%-4d %-8d %-48s %-8.2f %-8.2f %-30s %-27s %-10s %-23s %-29s %.2f", antal_varor+1,
-																					 beer_list[antal_varor].varunummer,       
-																					 beer_list[antal_varor].namn,
-																					 beer_list[antal_varor].pris,
-																					 beer_list[antal_varor].volym,
-																					 beer_list[antal_varor].typ,
-																					 beer_list[antal_varor].stil,
-																					 beer_list[antal_varor].forpackning,
-																					 beer_list[antal_varor].land,
-																					 beer_list[antal_varor].producent,
-																					 beer_list[antal_varor].alkoholhalt);
+		 beer_list[antal_varor].varunummer,       
+		 beer_list[antal_varor].namn,
+		 beer_list[antal_varor].pris,
+		 beer_list[antal_varor].volym,
+		 beer_list[antal_varor].typ,
+		 beer_list[antal_varor].stil,
+		 beer_list[antal_varor].forpackning,
+		 beer_list[antal_varor].land,
+		 beer_list[antal_varor].producent,
+		 beer_list[antal_varor].alkoholhalt);
+		 beer_list[antal_varor].varunummer,       
+		 beer_list[antal_varor].namn,
+		 beer_list[antal_varor].pris,
+		 beer_list[antal_varor].volym,
+		 beer_list[antal_varor].typ,
+		 beer_list[antal_varor].stil,
+		 beer_list[antal_varor].forpackning,
+		 beer_list[antal_varor].land,
+		 beer_list[antal_varor].producent,
+		 beer_list[antal_varor].alkoholhalt);
 		if (antal_varor == n-1) {
 			printf("\n\n");
 		}
