@@ -107,8 +107,6 @@ void get_beer() {
 ::::::MENU_FUNCTION::::::
 
 void menu(int input) {
-
-	get_beer();
 	
 	printf("******************************\n\n");
 	printf("   1. List content\n\n");
